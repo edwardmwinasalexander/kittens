@@ -1,0 +1,9 @@
+<h2>Kitten details</h2>
+
+<p>Name: <%= @kitten.name %></p>
+<p>Age: <%= @kitten.age %></p>
+<p>Cuteness: <%= @kitten.cuteness %></p>
+<p>Softness: <%= @kitten.softness %></p>
+
+<%= link_to 'Delete', kitten_path(@kitten), method: :delete, data: { turbo_method: :delete } %>
+<%= link_to 'Back to Kittens', kittens_path%>
